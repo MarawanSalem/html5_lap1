@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>My Video</title>
+    <style>
+        .control {
+            display: block;
+            text-align: center;
+        }
+
+        .vid {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 80vh;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="vid">
+        <video id="myVideo" controls>
+            <source src="vids/vid.mp4" type="video/mp4">
+            <source src="vids/Rag3lyleh.mp4" type="video/mp4">
+        </video>
+        <div id="myProgress">
+            <div id="myBar"></div>
+        </div>
+    </div>
+
+    <br>
+
+    <div class="control">
+        <button id="playBtn">Play</button>
+        <button id="stopBtn">Stop</button>
+        <button id="rewindBtn">Rewind</button>
+        <button id="startBtn"> start </button>
+        <button id="endBtn"> end </button>
+        <button id="forwardBtn">Forward</button>
+        <button id="fullScreenBtn">Fullscreen</button>
+        <input id="volumeSlider" type="range" min="0" max="1" step="0.1">
+        <button id="muteBtn">Mute</button>
+        <select id="speedSelect">
+            <option value="0.5">0.5x</option>
+            <option value="1" selected>1x</option>
+            <option value="1.5">1.5x</option>
+            <option value="2">2x</option>
+        </select>
+    </div>
+
+    <script src="main.js"></script>
+
+</body>
+
+</html>
